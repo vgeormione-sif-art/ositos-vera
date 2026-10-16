@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verá - Ositos</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+*{font-family:'Fredoka'; box-sizing:border-box; margin:0; padding:0;}
+body{background:#fff0f3; background-image:radial-gradient(#ffd6de 2px, transparent 2px); background-size:30px 30px; min-height:100vh; display:flex; justify-content:center; align-items:center; padding:20px;}
+.pantalla{display:none; width:100%; max-width:420px;}
+.pantalla.activa{display:block;}
+.bienvenida{background:white; border:3px dashed #e8c4b8; border-radius:30px; padding:35px 28px; text-align:center; box-shadow:0 10px 0 #f5d5c8;}
+.bienvenida h1{color:#6b4a3a; font-size:38px; line-height:1;}
+.btn-rosa{width:100%; padding:14px; background:#f8a8b8; border:3px solid #e8c4b8; border-radius:15px; font-size:18px; font-weight:bold; color:white; cursor:pointer; box-shadow:0 5px 0 #e8c4b8;}
+.titulo{background:#fff; border:3px dashed #c9a48a; border-radius:30px; padding:15px; text-align:center; margin-bottom:15px; box-shadow:0 5px 0 #e8c4b8;}
+.card{background:#fffaf5; border:3px solid #e8c4b8; border-radius:25px; padding:28px;}
+input{width:100%; padding:12px; margin:6px 0 14px 0; border:2px solid #e8c4b8; border-radius:12px; background:#fff5f0;}
+</style>
+</head>
+<body>
+<div id="p1" class="pantalla activa">
+<div class="bienvenida">
+<div style="font-size:70px;">🧸🎀</div>
+<h1>Hola<br>Verá!</h1>
+<p style="color:#c9a48a; margin:10px 0;">Bienvenida a tu rinconcito kawaii</p>
+<div style="font-size:30px; margin:10px 0;">✨💕🐾💕✨</div>
+<button class="btn-rosa" onclick="document.getElementById('p1').classList.remove('activa');document.getElementById('p2').classList.add('activa');">Entrar a mi sistema → 🧸</button>
+<div style="margin-top:15px; background:#fff5f0; border:2px solid #e8c4b8; border-radius:12px; padding:8px; font-size:12px; color:#6b4a3a; font-weight:bold;">🎀 VERASTEGUI HINOJOSA GEORMIONE 🎀</div>
+</div>
+</div>
+<div id="p2" class="pantalla">
+<div class="titulo"><h1>Bienvenida<br>Verá</h1><p style="color:#c9a48a; font-size:11px; font-weight:bold;">VERASTEGUI HINOJOSA GEORMIONE</p></div>
+<div class="card">
+<div style="text-align:center; font-weight:bold; color:#6b4a3a; margin-bottom:10px;">🐬 MySQL Login 🧸</div>
+<label style="font-size:12px; color:#6b4a3a; font-weight:bold;">🧸 Usuario</label>
+<input type="text" value="Verá">
+<label style="font-size:12px; color:#6b4a3a; font-weight:bold;">🔒 Contraseña</label>
+<input type="password" placeholder="••••••••">
+<button class="btn-rosa" onclick="alert('¡Bienvenida Verá! 🧸💕')">Login → 💖</button>
+<p style="text-align:center; font-size:10px; color:#c9a48a; margin-top:12px;">Hecho con 💖 por Geormione</p>
+</div>
+<button onclick="document.getElementById('p2').classList.remove('activa');document.getElementById('p1').classList.add('activa');" style="background:none; border:none; color:#c9a48a; font-size:12px; margin-top:10px; text-decoration:underline; width:100%;">← Volver a ositos</button>
+</div>
+</body>
+</html>
